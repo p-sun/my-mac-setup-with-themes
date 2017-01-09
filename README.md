@@ -1,8 +1,9 @@
 # Mac-Themes-Setup-for-Developers
 
 ## Terminal
+* To show hidden files, write in terminal: defaults write com.apple.finder AppleShowAllFiles YES
 * Copy .bash_profile & TermTheme.scpt into your home folder. Now you can switch to a random themes by typing 'l' in Terminal.
-* Double click the themes to install.
+* Double click the themes to install. If you can't install, go to System Preferences -> Security & Privacy -> General -> to run the blocked app.
 
 ## Xcode
 * Add the themes to Applications -> Xcode.app/Contents/SharedFrameworks/DVTKit.framework/Versions/A/Resources/FontAndColorThemes

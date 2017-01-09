@@ -1,6 +1,6 @@
 # Mac-Migration-for-Devs
 
-# Terminal
+## Terminal
 * Copy .bash_profile & TermTheme.scpt into your home folder. Now you can switch to a random themes by typing 'l' in Terminal.
 
 ## Copying keychain (i.e. Safari passwords)

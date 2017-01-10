@@ -26,6 +26,7 @@
 * Sublime
 * Slack
 * IntelliJIdea
+* Homebrew
 
 * Skype
 * Notability

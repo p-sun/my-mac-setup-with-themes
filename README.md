@@ -1,8 +1,8 @@
 # Mac-Themes-Setup-for-Developers
 
-## Terminal
-* To show hidden files, write in terminal: defaults write com.apple.finder AppleShowAllFiles YES
-* Copy .bash_profile & TermTheme.scpt into your home folder. Now you can switch to a random themes by typing 'l' in Terminal.
+## Random terminal themes with 'l'!iz
+* To show hidden files, type `defaults write com.apple.finder AppleShowAllFiles YES`.
+* Copy `.bash_profile` & `TermTheme.scpt` into your home folder. Now you can switch to a random themes by typing the alias `l`.
 * Double click the themes to install. If you can't install, go to System Preferences -> Security & Privacy -> General -> to run the blocked app.
 
 ## Xcode

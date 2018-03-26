@@ -1,7 +1,7 @@
 # Mac-Themes-Setup-for-Developers
 
 ## Randomize terminal themes with 'l'!
-* To show hidden files, type `defaults write com.apple.finder AppleShowAllFiles YES`.
+* To show hidden files, type `defaults write com.apple.finder AppleShowAllFiles YES`, followed by ` killall Finder` to restart the Finder.
 * Copy `.bash_profile` & `TermTheme.scpt` into your home folder. Now you can switch to a random themes by typing the alias `l`.
 * Double click the themes to install.
 

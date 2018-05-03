@@ -1,17 +1,61 @@
 # Mac-Themes-Setup-for-Developers
 
-## Randomize terminal themes with 'l'!
+## Show hidden Mac files
 * To show hidden files, type `defaults write com.apple.finder AppleShowAllFiles YES`, followed by ` killall Finder` to restart the Finder.
-* Double click the themes to install.
 
-## iTerm
+## iTerm2
+Felix Krause has a beautiful setup. [We will be following his guide](https://github.com/KrauseFx/what-terminal-is-felix-using). 
+
 * [Install iTerm 2](https://www.google.ca/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjd1qSE7NPZAhVn5IMKHUvhDbYQFggpMAA&url=https%3A%2F%2Fwww.iterm2.com%2F&usg=AOvVaw1Yj_9jTyrGNrAOhT8FsuYl)
 * [Install oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-* Open the `~/.zshrc` file and replace the theme name to agnoster `ZSH_THEME="agnoster"`.
-* [Install Powerline fonts for the agnoster theme](https://github.com/powerline/fonts)
-* In iTerm2, go to Preferences -> Profiles -> Text -> Change Font -> Pick `inconsolata for Powerline`
-* My favorite color schemes are in this repo. [More schemes can be found here.](https://github.com/mbadolato/iTerm2-Color-Schemes)
-* Double click a scheme to install. Then chose the scheme from Preferences -> Profiles -> Colors -> Color presets.
+	* `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+* [Install Powerline-shell](https://github.com/b-ryan/powerline-shell) to get the cool path bars.
+	* `pip install powerline-shell`
+		* If you don't have python already installed, use `sudo easy_install pip`
+	* Go to your root user directory, and add the following to your `.zshrc`:
+```
+function powerline_precmd() {
+  PS1="$(powerline-shell --shell zsh $?)"
+}
+
+function install_powerline_precmd() {
+  for s in "${precmd_functions[@]}"; do
+    if [ "$s" = "powerline_precmd" ]; then
+      return
+    fi
+  done
+  precmd_functions+=(powerline_precmd)
+}
+
+if [ "$TERM" != "linux" ]; then
+    install_powerline_precmd
+fi
+```
+* [Install Powerline fonts](https://github.com/powerline/fonts)
+	* Open `install.sh` with iTerm2.
+	* In iTerm2, go to Preferences -> Profiles -> Text -> Change Font -> Pick `Meslo LG M for Powerline`
+* Customize the bars in Powerline-shell:
+	* Powerline-shell is customizable through the use of a config file. You can generate the config file with
+```
+powerline-shell --generate-config > ~/.powerline-shell.json
+```
+	* Then you can edit `.powerline-shell.json` in your root user directory to add or remove bars in iTerm. I prefer,
+```
+{
+   "segments": [
+   "cwd",
+   "git",
+    "hg", 
+    "jobs"
+  ],
+  "cwd": {
+    "max_depth": 3
+  }
+}
+```
+* To set the scheme to `SolarizedDark`, chose the scheme from Preferences -> Profiles -> Colors -> Color presets.
+	* My favorite color schemes are in this repo. Double click a scheme to install. 
+	* [More schemes can be found here.](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
 ## Terminal
 * Though I prefer iTerm, if you prefer Terminal, feel free to copy `.bash_profile` & `TermTheme.scpt` into your home folder. Now you can switch to a random themes by typing the alias `l`.

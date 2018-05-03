@@ -39,7 +39,9 @@ fi
 ```
 powerline-shell --generate-config > ~/.powerline-shell.json
 ```
-	* Then you can edit `.powerline-shell.json` in your root user directory to add or remove bars in iTerm. I prefer,
+
+* Then you can edit `.powerline-shell.json` in your root user directory to add or remove bars in iTerm. I prefer,
+
 ```
 {
    "segments": [

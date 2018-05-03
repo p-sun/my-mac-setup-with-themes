@@ -16,7 +16,9 @@ Felix Krause has a beautiful setup. [We will be following his guide](https://git
 	* `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 * [Install Powerline-shell](https://github.com/b-ryan/powerline-shell) to get the cool path bars.
 	* `pip install powerline-shell`
-		* If you don't have python already installed, use `sudo easy_install pip`
+		* If you have the error "command not found: pip", use `brew install python`
+		* If you have the error "Permission denied: '/Library/Python/2.7/...", use `sudo chown -R $USER /Library/Python/2.7`
+		* If you have the errors "matplotlib 1.3.1 requires nose, which is not installed. matplotlib 1.3.1 requires tornado, which is not installed.", use `sudo -H pip install --ignore-installed matplotlib`.
 	* Go to your root user directory, and add the following to your `.zshrc`:
 ```
 function powerline_precmd() {
@@ -45,7 +47,7 @@ fi
 powerline-shell --generate-config > ~/.powerline-shell.json
 ```
 
-* Then you can edit `.powerline-shell.json` in your root user directory to add or remove bars in iTerm. I prefer,
+* Then you can edit `.powerline-shell.json` in your user directory to add or remove bars in iTerm2. I like these settings:
 
 ```
 {
@@ -61,7 +63,7 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 }
 ```
 * To set the scheme to `SolarizedDark`, chose the scheme from Preferences -> Profiles -> Colors -> Color presets.
-	* My favorite color schemes are in this repo. Double click a scheme to install. 
+	* My other favorite color schemes are in this repo. Double click a scheme to install. 
 	* [More schemes can be found here.](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
 ## Terminal

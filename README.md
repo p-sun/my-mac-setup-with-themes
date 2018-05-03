@@ -53,9 +53,7 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 {
    "segments": [
    "cwd",
-   "git",
-    "hg", 
-    "jobs"
+   "git"
   ],
   "cwd": {
     "max_depth": 3

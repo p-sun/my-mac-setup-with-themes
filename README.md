@@ -8,7 +8,7 @@ By default, screenshots are saved on your desktop. I prefer keeping a clean desk
 * Create a folder for your screenshots, for example, /Users/username/Documents/Screenshots. Drag the Screenshots folder in to the left panel in Finder to bookmark it.
 * Change the default location of your screenshots with `defaults write com.apple.screencapture /Users/username/Documents/Screenshots`
 
-## iTerm2
+## Color Schemes for iTerm2
 Felix Krause has a beautiful setup. [We will be following his guide](https://github.com/KrauseFx/what-terminal-is-felix-using). 
 
 * [Install iTerm 2](https://www.google.ca/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjd1qSE7NPZAhVn5IMKHUvhDbYQFggpMAA&url=https%3A%2F%2Fwww.iterm2.com%2F&usg=AOvVaw1Yj_9jTyrGNrAOhT8FsuYl)
@@ -66,13 +66,13 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 	* My other favorite color schemes are in this repo. Double click a scheme to install. 
 	* [More schemes can be found here.](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
-## Terminal
+## Color Themes for Terminal
 * Though I prefer iTerm, if you prefer Terminal, feel free to copy `.bash_profile` & `TermTheme.scpt` into your home folder. Now you can switch to a random themes by typing the alias `l`.
 
-## Xcode
+## Color Themes for Xcode
 * Add the themes to Applications -> Xcode.app/Contents/SharedFrameworks/DVTKit.framework/Versions/A/Resources/FontAndColorThemes
 
-## RubyMine & IntelliJ IDEA
+## Color Themes for RubyMine & IntelliJ IDEA
 1. Go to `File | Import Settings...` and specify the theme directory or the settings.jar file. Click OK in the dialog that appears.
 
 2. Restart IntelliJ IDEA or RubyMine
@@ -102,3 +102,4 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 * Flux
 * LICEcap
 * Postman
+* ShiftIt

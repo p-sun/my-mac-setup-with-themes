@@ -6,7 +6,7 @@
 ## Change the Mac's default screenshot folder
 By default, screenshots are saved on your desktop. I prefer keeping a clean desktop.
 * Create a folder for your screenshots, for example, /Users/username/Documents/Screenshots. Drag the Screenshots folder in to the left panel in Finder to bookmark it.
-* Change the default location of your screenshots with `defaults write com.apple.screencapture /Users/username/Documents/Screenshots`
+* Change the default location of your screenshots with `defaults write com.apple.screencapture location /Users/username/Documents/Screenshots`
 
 ## Color Schemes for iTerm2
 Felix Krause has a beautiful setup. [We will be following his guide](https://github.com/KrauseFx/what-terminal-is-felix-using). 

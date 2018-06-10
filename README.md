@@ -19,7 +19,8 @@ Felix Krause has a beautiful setup. [We will be following his guide](https://git
 		* If you have the error "command not found: pip", use `brew install python`
 		* If you have the error "Permission denied: '/Library/Python/2.7/...", use `sudo chown -R $USER /Library/Python/2.7`
 		* If you have the errors "matplotlib 1.3.1 requires nose, which is not installed. matplotlib 1.3.1 requires tornado, which is not installed.", use `sudo -H pip install --ignore-installed matplotlib`.
-	* Go to your root user directory, and add the following to your `.zshrc`:
+	* Go to your root user directory, change the ZSH_THEME in your `.zshrc` to `ZSH_THEME="agnostor"`
+	* Add the following to your `.zshrc`:
 ```
 function powerline_precmd() {
   PS1="$(powerline-shell --shell zsh $?)"
@@ -38,6 +39,8 @@ if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
 ```
+	* Change the ZSH_THEME in your `.zshrc` to `ZSH_THEME="agnostor"`
+
 * [Install Powerline fonts](https://github.com/powerline/fonts)
 	* Open `install.sh` with iTerm2.
 	* In iTerm2, go to Preferences -> Profiles -> Text -> Change Font -> Pick `Meslo LG M for Powerline`

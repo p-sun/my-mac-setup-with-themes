@@ -68,6 +68,11 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 	* My other favorite color schemes are in this repo. Double click a scheme to install. 
 	* [More schemes can be found here.](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
+## Git Shortcuts
+* After you've set up Oh My ZSH, in `~/.zshrc`, add
+`alias fkbranch="git branch --merged | grep -v \"\*\" | grep -v develop | xargs -n 1 git branch -d"`.
+This will allow the command `fkbranch` to remove all local branches that have been merged to develop.
+
 ## Color Themes for Terminal
 * Though I prefer iTerm, if you prefer Terminal, feel free to copy `.bash_profile` & `TermTheme.scpt` into your home folder. Now you can switch to a random themes by typing the alias `l`.
 

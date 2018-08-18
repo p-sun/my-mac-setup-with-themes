@@ -69,39 +69,34 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 	* My other favorite color schemes are in this repo. Double click a scheme to install. Grape is my current favourite.
 	* [More schemes can be found here.](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
-## Git Shortcuts
-* After you've set up Oh My ZSH, in `~/.zshrc`, add
-`alias fkbranch="git branch --merged | grep -v \"\*\" | grep -v develop | xargs -n 1 git branch -d"`.
-This will allow the command `fkbranch` to remove all local branches that have been merged to develop.
+## Color Themes
 
-## Color Themes for Terminal
+### Color Themes for Terminal
 * Though I prefer iTerm, if you prefer Terminal, feel free to copy `.bash_profile` & `TermTheme.scpt` into your home folder. Now you can switch to a random themes by typing the alias `l`.
 
-## Color Themes for Xcode
+### Color Themes for Xcode
 * Add the themes to Applications -> Xcode.app/Contents/SharedFrameworks/DVTKit.framework/Versions/A/Resources/FontAndColorThemes
 
-## Color Themes for RubyMine & IntelliJ IDEA
+### Color Themes for RubyMine & IntelliJ IDEA
 1. Go to `File | Import Settings...` and specify the theme directory or the settings.jar file. Click OK in the dialog that appears.
 
 2. Restart IntelliJ IDEA or RubyMine
 
 3. Go to `Preferences | Editor | Colors & Fonts` and select one of the new color themes.
 
-## Copying keychain (i.e. Safari passwords)
-* Export by ~/Library/Keychains
-** See https://support.apple.com/kb/PH20120?locale=en_US
+## Essential Software
 
-## Essential AppStore Apps
+### Essential AppStore Apps
 * Xcode
 * GIPHY Capture 
 * Notability
 
-## Essential Terminal
+### Essential Terminal
 * iTerm 2
 * Homebrew
 * CocoaPods
 
-## Essential Development
+### Essential Development
 * Slack
 * RubyMine
 * Sourcetree
@@ -109,10 +104,19 @@ This will allow the command `fkbranch` to remove all local branches that have be
 * IntelliJIdea
 * Atom
 
-## Misc Productivity
+### Misc Productivity
 * Skype
 * VLC Player
 * Chrome
 * Flux
 * Postman
 * ShiftIt
+
+## Git Shortcuts
+* After you've set up Oh My ZSH, in `~/.zshrc`, add
+`alias fkbranch="git branch --merged | grep -v \"\*\" | grep -v develop | xargs -n 1 git branch -d"`.
+This will allow the command `fkbranch` to remove all local branches that have been merged to develop.
+
+## Copying keychain (i.e. Safari passwords)
+* Export by ~/Library/Keychains
+** See https://support.apple.com/kb/PH20120?locale=en_US

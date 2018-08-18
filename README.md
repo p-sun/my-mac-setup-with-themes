@@ -12,6 +12,7 @@ By default, screenshots are saved on your desktop. I prefer keeping a clean desk
 Felix Krause has a beautiful setup. [We will be following his guide](https://github.com/KrauseFx/what-terminal-is-felix-using). 
 
 * [Install iTerm 2](https://www.google.ca/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjd1qSE7NPZAhVn5IMKHUvhDbYQFggpMAA&url=https%3A%2F%2Fwww.iterm2.com%2F&usg=AOvVaw1Yj_9jTyrGNrAOhT8FsuYl)
+	* Once installed, go to iTerm2 -> Make iTerm2 Default Term
 * [Install oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 	* `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 * [Install Powerline-shell](https://github.com/b-ryan/powerline-shell) to get the cool path bars.

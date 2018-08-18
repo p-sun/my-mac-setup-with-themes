@@ -40,7 +40,6 @@ if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
 ```
-	* Change the ZSH_THEME in your `.zshrc` to `ZSH_THEME="agnostor"`
 
 * [Install Powerline fonts](https://github.com/powerline/fonts)
 	* Open `install.sh` with iTerm2.

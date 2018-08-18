@@ -17,6 +17,7 @@ Felix Krause has a beautiful setup. [We will be following his guide](https://git
 * [Install Powerline-shell](https://github.com/b-ryan/powerline-shell) to get the cool path bars.
 	* `pip install powerline-shell`
 		* If you have the error "command not found: pip", use `brew install python`
+		* If you have the error "brew not found", install [homebrew](https://brew.sh).
 		* If you have the error "Permission denied: '/Library/Python/2.7/...", use `sudo chown -R $USER /Library/Python/2.7`
 		* If you have the errors "matplotlib 1.3.1 requires nose, which is not installed. matplotlib 1.3.1 requires tornado, which is not installed.", use `sudo -H pip install --ignore-installed matplotlib`.
 	* Go to your root user directory, change the ZSH_THEME in your `.zshrc` to `ZSH_THEME="agnostor"`

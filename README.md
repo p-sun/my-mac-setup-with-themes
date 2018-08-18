@@ -91,23 +91,28 @@ This will allow the command `fkbranch` to remove all local branches that have be
 * Export by ~/Library/Keychains
 ** See https://support.apple.com/kb/PH20120?locale=en_US
 
-## Essential Software
+## Essential AppStore Apps
 * Xcode
+* GIPHY Capture 
+* Notability
+
+## Essential Terminal
+* iTerm 2
+* Homebrew
+* CocoaPods
+
+## Essential Development
+* Slack
 * RubyMine
 * Sourcetree
 * Sublime
-* Slack
 * IntelliJIdea
-* Homebrew
-* CocoaPods
-* iTerm 2
 * Atom
 
+## Misc Productivity
 * Skype
-* Notability
 * VLC Player
 * Chrome
 * Flux
-* LICEcap
 * Postman
 * ShiftIt

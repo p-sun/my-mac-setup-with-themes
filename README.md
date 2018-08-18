@@ -65,7 +65,7 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 ```
 * Quit iTerm2 and restart it to see the new Powerline Shell.
 * To set the scheme to `SolarizedDark`, chose the scheme from Preferences -> Profiles -> Colors -> Color presets.
-	* My other favorite color schemes are in this repo. Double click a scheme to install. 
+	* My other favorite color schemes are in this repo. Double click a scheme to install. Grape is my current favourite.
 	* [More schemes can be found here.](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
 ## Git Shortcuts

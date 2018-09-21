@@ -1,4 +1,4 @@
-# Mac-Themes-Setup-for-Developers
+# Mac Themes and Setup for Developers
 
 ## Show hidden Mac files
 * To show hidden files, type `defaults write com.apple.finder AppleShowAllFiles YES`, followed by ` killall Finder` to restart the Finder.

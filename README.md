@@ -81,7 +81,7 @@ To setup the zsh shell inside the terminal inside Visual Studio Code:
 brew tap homebrew/cask-fonts                # you only have to do this once!
 brew cask install font-meslo-nerd-font
 ```
-* Code -> Preferences -> Settings -> click the curley braces icon on the top right to edit the `settings.json`. Assuming yours started off blank, add these lines go use the zsh shell inside the integrated terminal inside VSCode.
+* Code -> Preferences -> Settings -> click the curley braces icon on the top right to edit the `settings.json`. Assuming yours started off blank, add these lines to use the zsh shell inside the integrated terminal inside VSCode.
 ```
 {
     "terminal.external.osxExec": "iTerm.app",

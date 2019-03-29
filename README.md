@@ -16,7 +16,7 @@ Felix Krause has a beautiful setup. [We will be following his guide](https://git
 * [Install oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 	* `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 	* Set zsh as your default shell with `chsh -s /bin/zsh`
-* [Install Powerline-shell](https://github.com/b-ryan/powerline-shell) to get the cool path bars.
+* [Install Powerline-shell](https://github.com/b-ryan/powerline-shell) to get the cool bars that tell you which directory and git branch you're on.
 
 
 ```
@@ -74,6 +74,24 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 	* My other favorite color schemes are in this repo. Double click a scheme to install. Grape is my current favourite.
 	* [More schemes can be found here.](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
+## Visual Studio Code
+To setup the zsh shell inside the terminal inside Visual Studio Code:
+* Install [Nerdfonts](https://github.com/Homebrew/homebrew-cask-fonts) with Homebrew
+```
+brew tap homebrew/cask-fonts                # you only have to do this once!
+brew cask install font-meslo-nerd-font
+```
+* Code -> Preferences -> Settings -> click the curley braces icon on the top right to edit the `settings.json`. Assuming yours started off blank, add these lines go use the zsh shell inside the integrated terminal inside VSCode.
+```
+{
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontFamily": "MesloLGM Nerd Font"
+}
+```
+
+### 
+
 ## Color Themes
 
 ### Color Themes for Terminal
@@ -108,6 +126,7 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 * Sublime
 * IntelliJIdea
 * Atom
+* VSCode
 
 ### Misc Productivity
 * Skype

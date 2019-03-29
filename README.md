@@ -136,10 +136,12 @@ brew cask install font-meslo-nerd-font
 * Postman
 * ShiftIt
 
-## Git Shortcuts
-* After you've set up Oh My ZSH, in `~/.zshrc`, add
-`alias fkbranch="git branch --merged | grep -v \"\*\" | grep -v develop | xargs -n 1 git branch -d"`.
+## ZSH Shortcuts
+After you've set up Oh My ZSH, in `~/.zshrc`, add aliases to add some shortcuts you can use in terminal to replace commonly used commands.
+* `alias gco="git checkout"` so you can write `gco -b feature/home_page` instead of `git checkout -b feature/home_page`
+* `alias fkbranch="git branch --merged | grep -v \"\*\" | grep -v develop | xargs -n 1 git branch -d"`.
 This will allow the command `fkbranch` to remove all local branches that have been merged to develop.
+* `alias cdm="cd /Users/psun/Documents/My_Project_Folter" sets up an easy alias for jumping into the directory of your current project
 
 ## Copying keychain (i.e. Safari passwords)
 * Export by ~/Library/Keychains

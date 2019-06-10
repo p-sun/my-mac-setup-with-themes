@@ -159,7 +159,7 @@ brew cask install font-meslo-nerd-font
 After you've set up Oh My ZSH, in `~/.zshrc`, add aliases to add some shortcuts you can use in terminal to replace commonly used commands.
 * `alias gco="git checkout"` so you can write `gco -b feature/home_page` instead of `git checkout -b feature/home_page`
 * `alias gitmegaclean="git branch --merged | grep -v \"\*\" | grep -v master | grep -v develop | xargs -n 1 git branch -d && git remote update origin --prune"`
-This will allow the command `gitmegaclean` to remove all local branches that have been merged to develop, and delete local branches that have been removed upstream.
+This will allow the command `gitmegaclean` to remove all local branches that have been merged to `develop` or `master`, and delete local branches that have been removed upstream.
 * `alias cdm="cd /Users/psun/Documents/My_Project_Folter" sets up an easy alias for jumping into the directory of your current project
 
 ## Copying keychain (i.e. Safari passwords)

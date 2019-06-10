@@ -79,10 +79,19 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 
 `git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
 
-* In `~/.zshrc`, append `zsh-autosuggestions & zsh-syntax-highlighting` to `plugins()=(git)` like this
+* Download zsh-syntax-highlighting by
 
-`plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
+`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting`
 
+* In `~/.zshrc`, append `zsh-autosuggestions & zsh-syntax-highlighting` with
+
+```
+plugins=(
+  git,
+  zsh-autosuggestions,
+  zsh-syntax-highlighting
+)
+```
 
 ## Visual Studio Code
 To setup the zsh shell inside the terminal inside Visual Studio Code:

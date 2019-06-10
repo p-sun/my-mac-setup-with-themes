@@ -74,6 +74,18 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 	* My other favorite color schemes are in this repo. Double click a scheme to install. Grape is my current favourite.
 	* [More schemes can be found here.](https://github.com/mbadolato/iTerm2-Color-Schemes)
 
+## Oh My ZSH Autocomplete
+* Download zsh-autosuggestions
+
+`git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+
+`nano ~/.zshrc find plugins=(git)`
+
+* Append `zsh-autosuggestions & zsh-syntax-highlighting` to `plugins()` like this
+
+`plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
+
+
 ## Visual Studio Code
 To setup the zsh shell inside the terminal inside Visual Studio Code:
 * Install [Nerdfonts](https://github.com/Homebrew/homebrew-cask-fonts) with Homebrew

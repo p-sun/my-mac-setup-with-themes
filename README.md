@@ -79,9 +79,7 @@ powerline-shell --generate-config > ~/.powerline-shell.json
 
 `git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions`
 
-`nano ~/.zshrc find plugins=(git)`
-
-* Append `zsh-autosuggestions & zsh-syntax-highlighting` to `plugins()` like this
+* In `~/.zshrc`, append `zsh-autosuggestions & zsh-syntax-highlighting` to `plugins()=(git)` like this
 
 `plugins=(git zsh-autosuggestions zsh-syntax-highlighting)`
 

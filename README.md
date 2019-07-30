@@ -114,7 +114,7 @@ brew cask install font-meslo-nerd-font
 ## Color Themes
 
 ### Color Themes for Terminal
-* Though I prefer iTerm, if you prefer Terminal, feel free to copy `.bash_profile` & `TermTheme.scpt` into your home folder. Now you can switch to a random themes by typing the alias `l`.
+* Though I prefer iTerm 2, if you prefer Terminal, feel free to copy `.bash_profile` & `TermTheme.scpt` into your home folder. Now you can switch to a random themes by typing the alias `l`.
 
 ### Color Themes for Xcode
 * Add the themes to Applications -> Xcode.app/Contents/SharedFrameworks/DVTKit.framework/Versions/A/Resources/FontAndColorThemes
@@ -130,13 +130,15 @@ brew cask install font-meslo-nerd-font
 
 ### Essential AppStore Apps
 * Xcode
-* GIPHY Capture 
+* Gifox 
 * Notability
 
 ### Essential Terminal
 * iTerm 2
 * Homebrew
 * CocoaPods
+* yarn
+* nodejs
 
 ### Essential Development
 * Slack
@@ -146,11 +148,15 @@ brew cask install font-meslo-nerd-font
 * IntelliJIdea
 * Atom
 * VSCode
+* Unity
+* Blender
+* Android Studio
 
 ### Misc Productivity
 * Skype
 * VLC Player
 * Chrome
+* Chrome Adblock
 * Flux
 * Postman
 * ShiftIt
